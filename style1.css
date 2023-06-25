@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap%27');
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body{
+  height: 100%;
+  background-color: #0c99b3;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 160px;
+  background-color: #bffefe;
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.circulo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:#424f4f;
+  max-width:150px;
+  width: 100%;
+  height:150px;
+  border-radius: 50%;
+}
+
+.circulo img{
+  max-width: 130px;
+  width: 100%;
+}
+
+
+.circulo1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background:#fbb413;
+  max-width: 400px;
+  width:100%;
+  height:400px;
+  margin-left: 300px;
+  margin-bottom: 70px;
+  border-radius: 50%;
+  box-shadow: 7px 7px 0px -2px rgba(0,0,0,0.55);
+}
+
+.circulo1 p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  width: 100%;
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
+.njord {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 10px;
+  width: 100%;
+  height: 50px;
+  margin-top: 200px;
+}
+
+.esquerda{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.circulo2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  max-width:340px;
+  width: 100%;
+  height:340px;
+  margin-top: 120px;
+  margin-right: 150px;
+  border-radius: 50%;
+  box-shadow: 7px 7px 0px -2px rgba(0,0,0,0.55);
+  background:#fbb413; 
+}
+
+.circulo2 p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
+
+.botaoVamos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 132px;
+  width: 100%;
+  height: 42px;
+  padding: 5px 15px;
+  margin-right: 150px;
+  margin-top: 20px;
+  background-color: #fbb413;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.botaoVamos:hover{
+  box-shadow: 5px 5px 0px -2px rgba(0,0,0,0.55);
+}
+
+
+footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  padding: 5px 15px;
+
+  background-color: #bffefe;
+}
+
+.icons-contato{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .icons-contato a {
+  margin-right: 15px;
+}
+
+footer .icons-contato a img{
+  max-width: 48px;
+  width: 100%;
+}

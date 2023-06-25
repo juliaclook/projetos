@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+*, button, input{
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  height: 100%;
+  background-color: #0c99b3;
+  background-image: url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png");
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 160px;
+  background-color: #bffefe;
+}
+
+.circulo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:#424f4f;
+  width:150px;
+  height:150px;
+  border-radius: 50%;
+}
+
+.circulo img{
+  max-width: 130px;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.card-login{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 550px;
+  width: 100%;
+  margin-top: 125px;
+  padding: 5px 15px;
+}
+
+.card-login h2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.card-login input{
+  max-width: 350px;
+  width: 100%;
+  height: 38px;
+  padding: 5px 15px;
+  margin-bottom: 15px;
+  background-color: #bffefe;
+
+}
+
+.card-login .botaoEntrar {
+  max-width: 125px;
+  width: 100%;
+  height: 36px;
+  padding: 5px 15px;
+  background-color: #fbb413;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.card-login .botaoEntrar:hover{
+  box-shadow: 5px 5px 0px -2px rgba(0,0,0,0.55);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  padding: 5px 15px;
+
+  background-color: #bffefe;
+}
+
+.icons-contato{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .icons-contato a {
+  margin-right: 15px;
+}
+
+footer .icons-contato a img{
+  max-width: 48px;
+  width: 100%;
+}
