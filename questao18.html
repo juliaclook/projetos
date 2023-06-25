@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Catarina Sea</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/style2.css" type="text/css" />
+  <link rel="icon" type="image/png" href="../assets/logo.png">
+</head>
+
+<body>
+  <header>
+    <div class="pontuacao">
+      <p id="pontos"></p>
+    </div>
+    <div class="circulo">
+      <img src="../assets/logo.png" alt="logo">
+    </div>
+    <div></div>
+  </header>
+  <div class="container">
+    <div class="esquerda">
+      <div class="njord">
+        <img src="../assets/njordGrande.png" alt="Njord">
+      </div>
+      <div class="dica">
+        <div class="wrapper-dica">
+          <p id="dica-texto">Conte com ajuda de empresas especializadas! Elas estão sempre atentos para as novidades, trazendo e desenvolvendo soluções.</p>
+        </div>
+      </div>
+    </div>
+    <div class="direita">
+      <div class="pergunta">
+        <p id="pergunta-text">Qual é o pior método de criação de senha?</p>
+      </div>
+      <div class="container-alternativas">
+        <button type="button" class="alternativa1" onclick="clicouResposta(1)">
+          <p class="alternativa-text">Colocar palavras do dicionário</p>
+        </button>
+        <button type="button" class="alternativa2" onclick="clicouResposta(2)">
+          <p class="alternativa-text">Colocar palavras fáceis</p>
+        </button>
+        <button type="button" class="alternativa3" onclick="clicouResposta(3)">
+          <p class="alternativa-text">Colocar palavras bem pouco usadas e que são complicadas</p>
+        </button>
+        <button type="button" class="alternativa4" onclick="clicouResposta(4)">
+          <p class="alternativa-text">Colocar o seu nome e alguns caracteres especiais</p>
+        </button>
+      </div>
+    </div>
+
+    <script>
+      var urlFinal = window.location.search
+
+      var separando = urlFinal.split("=");
+      somatoria = parseInt(separando[1]);
+
+      document.getElementById("pontos").innerHTML = somatoria; 
+
+      function clicouResposta(resposta) { 
+        if (resposta === 2) { 
+            somatoria = somatoria + 5; 
+          } 
+            passaValor(somatoria); 
+        } 
+
+        var passaValor = function (valor) { 
+          window.location = "questao19.html?minhaVariavel=" + valor; 
+        }
+    </script>
+
+    <footer>
+    <div class="email-contato">
+      <span>catarina.sea2020@gmail.com</span>
+    </div>
+    <div class="icons-contato">
+      <a target="_blank" href="https://www.youtube.com.br">
+        <img src="../assets/youtube.png" alt="youtube logo">
+      </a>
+      <a target="_blank" href="https://www.instagram.com/catarina.sea.brasil/?hl=pt-br">
+        <img src="../assets/instagram.png" alt="instagram logo">
+      </a>
+      <a target="_blank" href="https://www.twitter.com.br">
+        <img src="../assets/twitter.png" alt="twitter logo">
+      </a>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="../scripts/scriptRespostas.js"></script>
+</body>
+
+</html>

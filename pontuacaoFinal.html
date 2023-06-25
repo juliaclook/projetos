@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Catarina Sea</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/style3.css" type="text/css" />
+  <link rel="icon" type="image/png" href="../assets/logo.png">
+</head>
+
+<body>
+  <header>
+    <div class="circulo">
+      <img src="../assets/logo.png" alt="logo"/>
+    </div>
+  </header>
+    <div class="esquerda">
+      <div class="njord">
+        <img src="../assets/njordGrande.png" alt="Njord">
+      </div>
+      <div class="direita">
+        <div class="pontuacao-texto">
+          <p id="pontos"></p>
+        </div>
+
+        <button class="botao-facaNovamente" type="button" onclick="novamente()">Faça novamente!</button>
+
+        <script>
+          var urlFinal = window.location.search
+
+          var separando = urlFinal.split("=");
+          somatoria = parseInt(separando[1]); 
+
+          function socorro() { 
+              passaValor(somatoria); 
+          } 
+
+          document.getElementsById("pontos").innerHTML = "Parabéns! Você fez" + somatoria +  " pontos. Se não estiver satisfeito, faça novamente! E lembre-se, segurança na internet nunca é demais! #SeguroNaNet";
+          
+          var passaValor = function (valor) { 
+          window.location = "pontuacaoFinal.html?minhaVariavel=" + valor; 
+          }
+
+          function novamente() {
+            window.location = "login.html"
+          }
+        </script>
+
+        <footer>
+          <div class="email-contato">
+            <span>catarina.sea2020@gmail.com</span>
+          </div>
+          <div class="icons-contato">
+            <a target="_blank" href="https://www.youtube.com.br">
+              <img src="../assets/youtube.png" alt="youtube logo">
+            </a>
+            <a target="_blank" href="https://www.instagram.com/catarina.sea.brasil/?hl=pt-br">
+              <img src="../assets/instagram.png" alt="instagram logo">
+            </a>
+            <a target="_blank" href="https://www.twitter.com.br">
+              <img src="../assets/twitter.png" alt="twitter logo">
+            </a>
+          </div>
+        </footer>
+</body>
